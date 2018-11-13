@@ -1,8 +1,8 @@
-import React from 'react';
+import React    from 'react';
 import cssStyle from './BuildControl.css'
 const buildControl = (props) => (
-    <div className={cssStyle.BuildControl}>
-        <div className={cssStyle.Label}>{props.label}</div>
+    <div className      ={cssStyle.BuildControl}>
+        <div className  ={cssStyle.Label}>{props.label}</div>
         <button
             onClick     ={props.removed}
             className   ={cssStyle.Less}

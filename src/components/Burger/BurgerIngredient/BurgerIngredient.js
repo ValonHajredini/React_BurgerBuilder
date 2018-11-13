@@ -1,22 +1,18 @@
-import React, { Component} from 'react';
-import cssStyle from './BurgerIngredient.css'
-import PropTypes from 'prop-types';
+import React, { Component}  from 'react';
+import cssStyle             from './BurgerIngredient.css'
+import PropTypes            from 'prop-types';
 class BurgerIngredient extends Component {
     render() {
             let ingredient = null;
             switch (this.props.type){
                 case ('bred-bottom'):
-                    ingredient = <div className={cssStyle.BreadBottom}>
-
-                    </div>;
+                    ingredient = <div className={cssStyle.BreadBottom}> </div>;
                     break;
                 case ('bred-top'):
                     ingredient= (
                         <div className={cssStyle.BreadTop}>
-                            <div className={cssStyle.Seeds1}>
-                            </div>
-                            <div className={cssStyle.Seeds2}>
-                            </div>
+                            <div className={cssStyle.Seeds1}> </div>
+                            <div className={cssStyle.Seeds2}> </div>
                         </div>
                     );
                     break;
@@ -39,7 +35,6 @@ class BurgerIngredient extends Component {
                 default:
                     ingredient = null;
                     break;
-
             }
             return ingredient;
     }
